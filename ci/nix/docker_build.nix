@@ -120,6 +120,7 @@ rec {
               fi
             done
       mkdir -p tmp
+      chmod 1777 tmp
       mkdir -p usr/bin
       ln -s /bin/env usr/bin/env
       if [[ -e lib ]] ; then
